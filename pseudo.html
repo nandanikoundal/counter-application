@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        
+        }
+        h1::first-letter{
+            font-family: Verdana;
+            font-size: 5cm;
+            color: blue;
+            text-shadow: 5px 7px 9px rgb(40, 45, 91);
+        }
+    #para::first-line{
+        font-family: Verdana;
+            font-size: 2cm;
+            color: rgb(199, 180, 35);
+            text-shadow: 3px 5px 7px rgb(34, 34, 11);
+    }
+    h1::selection{
+        color: rgb(115, 147, 158);
+    }
+    h1:active{
+        color: red;
+    }
+    h1:hover{
+    background-color: gray;
+    }
+    /* a:visited{
+        color: black; */
+    /* } */
+    input:focus{
+        border: 5px solid black;
+        box-shadow: 4px 6px 8px gray;
+        color: blue;
+        width: 300px;
+    }
+     #para::after{
+        content: url(https://www.icegif.com/wp-content/uploads/2022/04/icegif-931.gif);
+        min-height:10px;
+    }
+    h1::after{
+        content: url(https://i.pinimg.com/originals/1d/bf/27/1dbf278f081f91ed4d44108a21bd0135.gif);
+    }
+    p:first-child{
+        font-size: 1cm;
+        color: orangered;
+        background-color: aqua;
+    }
+    .main{
+        display: grid;
+        grid: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+        grid-gap: 10px;
+        background-color: BLACK;
+        padding: 10px;
+    }
+    .Num{
+        background-color: gray;
+        text-align: center;
+        color: black;
+        padding: 10px;
+        font-size: 30px;
+    }
+    q:lang(no) {
+  quotes: "~" "~";
+}
+    </style>
+</head>
+<body>
+    <h1>Hii! Everyone</h1>
+    <p id="para">I am a working on CSS.</p>
+    <a href="#">Click Me</a>
+    <div>
+        <p>Lorem ipsum dolor, sit  <q lang="no">amet consectetur adipisicing elit.</q></p>
+            <p> Et eveniet quam assumenda veniam enim dicta?</p>
+            <p> Eaque deserunt <q lang="no">quae provident</q> magnam modi. </p>
+            <p> Mollitia sequi in quibusdam repudiandae enim eveniet, voluptas numquam.</p>
+    </div>
+    <form >
+        <h2>Name:<input type="text" value="Enter Your Name">
+    </form>
+    <br>
+    <br>
+    <div class="main">
+        <div class="Num">1</div>
+        <div class="Num">2</div>
+        <div class="Num">3</div>
+        <div class="Num">4</div>
+        <div class="Num">5</div>
+        <div class="Num">6</div>
+        <div class="Num">7</div>
+        <div class="Num">8</div>
+        <div class="Num">9</div>
+    </div>
+</body>
+</html>
